@@ -1,0 +1,21 @@
+@import "_head";
+@import "_basics";
+@import "_navbar";
+@import "_header";
+
+// media
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 6%;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    padding: 3rem 0.8rem;
+  }
+}

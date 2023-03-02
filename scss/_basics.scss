@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+$main: #0aa9b4;
+$secondary: #00315c;
+$bgMain: #f7fcfc;
+$yellow: #fecb00;
+$black: #1f1f24;
+$grey: #8e8e91;
+$text: #8e8e91;
+$lightGrey: #e9e9ea;
+$white: #fff;
+
+// mixins
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 4rem;
+}
+@mixin d-flex($j-s: center, $a-i: center, $f-d: row, $gap: 0px) {
+  display: flex;
+  justify-content: $j-s;
+  align-items: $a-i;
+  flex-direction: $f-d;
+  gap: $gap;
+}
+%f-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

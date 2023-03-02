@@ -1,0 +1,242 @@
+.header {
+  @include d-flex(space-between, normal, row, 20px);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  @media (max-width: 640px) {
+    padding-top: 30px;
+  }
+  &_content {
+    width: 85%;
+    @media (max-width: 840px) {
+      width: 100%;
+    }
+    &_heading {
+      @include d-flex(space-between, start);
+
+      &_title {
+        @include d-flex(start, end, row, 10px);
+        color: $secondary;
+        flex-wrap: wrap;
+
+        h1 {
+          line-height: 34px;
+          font-size: 33px;
+          font-style: normal;
+          font-weight: 500;
+        }
+        p {
+          line-height: 24px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+        @media (max-width: 640px) {
+          h1 {
+            font-size: 28px;
+            line-height: 18px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 18px;
+          }
+        }
+      }
+      &_star {
+        color: $lightGrey;
+        transition: 0.1s linear;
+        &:hover {
+          color: $yellow;
+          fill: $yellow;
+        }
+        @media (max-width: 460px) {
+          width: 40px;
+        }
+      }
+    }
+    &_description {
+      color: $text;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 160%;
+    }
+    &_card {
+      border: 1px solid $lightGrey;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin: 20px 0;
+      @media (max-width: 640px) {
+        padding: 10px 10px;
+      }
+      &_head {
+        @include d-flex(space-between, start, row, 20px);
+        &_left {
+          @include d-flex(space-between, start, row, 20px);
+          color: $text;
+          img {
+            width: 170px;
+            height: 120px;
+            @media (max-width: 520px) {
+              width: 100px;
+              height: 70px;
+            }
+          }
+          &_content {
+            @include d-flex(start, start, column);
+            gap: 10px;
+            p {
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 160%;
+              @media (max-width: 520px) {
+                font-size: 12px;
+              }
+            }
+            div {
+              @include d-flex(start, start);
+              gap: 10px;
+            }
+          }
+        }
+
+        &_right {
+          @include d-flex(space-between, start, row, 20px);
+          @media (max-width: 720px) {
+            display: none;
+          }
+          &_filter {
+            @include d-flex();
+            gap: 10px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 160%;
+            i {
+              color: $main;
+            }
+          }
+          iframe {
+            width: 170px;
+            height: 120px;
+          }
+        }
+      }
+      &_address {
+        padding-top: 20px;
+        @include d-flex(start, start);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        gap: 20px;
+        color: $text;
+
+        svg {
+          @media (max-width: 640px) {
+            transform: translate(0px, 5px);
+          }
+        }
+        &_pin {
+          @media (max-width: 640px) {
+            width: 26px;
+          }
+        }
+        p {
+          font-size: 16px;
+          @media (max-width: 640px) {
+            font-size: 13px;
+          }
+        }
+      }
+      &_table {
+        margin: 20px 0;
+        @include d-flex(start, start);
+        gap: 40px;
+        @media (max-width: 840px) {
+          flex-direction: column;
+          gap: 10px;
+          font-size: 13px;
+        }
+        &_box {
+          div {
+            @include d-flex(start);
+            gap: 20px;
+            i {
+              visibility: hidden;
+            }
+            a {
+              color: $main;
+              text-decoration: nonew;
+            }
+          }
+        }
+        &_boxTime {
+          color: $grey;
+
+          div {
+            @include d-flex(start);
+            gap: 20px;
+
+            i {
+              visibility: hidden;
+            }
+            a {
+              color: $main;
+              text-transform: lowercase !important;
+            }
+          }
+        }
+      }
+      &_map {
+        display: none;
+        @media (max-width: 720px) {
+          display: block;
+        }
+      }
+      &_description {
+        color: $text;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+    &_tabs {
+      @include d-flex(space-between, normal, row, 20px);
+      overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      border-bottom: 1px solid $lightGrey;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @media (max-width: 450px) {
+        flex-direction: column;
+      }
+      &_tab {
+        color: $main;
+        padding: 15px 0;
+        min-width: max-content;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+      }
+      .tabActiv {
+        color: $secondary;
+        border-bottom: 2px solid $secondary;
+      }
+    }
+  }
+  &_ads {
+    width: 15%;
+    // height: 100%;
+    background-color: $lightGrey;
+    border-radius: 10px;
+    p {
+      visibility: hidden;
+    }
+    @media (max-width: 840px) {
+      display: none;
+    }
+  }
+}

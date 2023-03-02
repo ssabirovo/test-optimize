@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black and White</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <section class="navbar">
+      <div class="navbar_top">
+        <img src="/images/logo.svg" alt="" class="navbar_top_logo" />
+        <div class="navbar_top_lang">
+          <p>Ру</p>
+          <p>O‘z</p>
+          <p>En</p>
+        </div>
+        <div class="navbar_top_mobile">
+          <select class="navbar_top_select">
+            <option>Ру</option>
+            <option>O‘z</option>
+            <option>En</option>
+          </select>
+          <svg
+            class="navbar_top_mobile_ham"
+            width="19"
+            height="3"
+            viewBox="0 0 19 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="17.5" cy="1.5" r="1.5" fill="currentColor" />
+            <circle cx="9.5" cy="1.5" r="1.5" fill="currentColor" />
+            <circle cx="1.5" cy="1.5" r="1.5" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+      <div class="navbar_bottom">
+        <svg
+          class="navbar_bottom_button"
+          width="40"
+          height="32"
+          viewBox="0 0 40 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="2"
+            cy="2"
+            r="1.1"
+            fill=" currentColor"
+            stroke=" currentColor"
+            stroke-width="1.8"
+          />
+          <circle
+            cx="2"
+            cy="16"
+            r="1.1"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <circle
+            cx="2"
+            cy="30"
+            r="1.1"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <rect
+            x="9.9"
+            y="0.9"
+            width="29.2"
+            height="2.2"
+            rx="1.1"
+            fill=" currentColor"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <rect
+            x="9.9"
+            y="14.9"
+            width="29.2"
+            height="2.2"
+            rx="1.1"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <rect
+            x="9.9"
+            y="28.9"
+            width="29.2"
+            height="2.2"
+            rx="1.1"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+        </svg>
+
+        <div class="navbar_bottom_search">
+          <div class="navbar_bottom_search_cities">
+            <p>Ташкент</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="navbar_bottom_search_container">
+            <input type="text" placeholder="Поиск" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="header">
+      <div class="header_content">
+        <div class="header_content_heading">
+          <div class="header_content_heading_title">
+            <h1>A-STORE.UZ</h1>
+            <p>ФИРМЕННЫЙ МАГАЗИН</p>
+          </div>
+          <svg
+            class="header_content_heading_star"
+            width="22"
+            height="20"
+            viewBox="0 0 40 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.7751 29.2558L20 28.788L19.2249 29.2558L9.90553 34.8806L12.371 24.2798L12.576 23.3986L11.8921 22.8062L3.66442 15.6796L14.5089 14.7445L15.4084 14.6669L15.7609 13.8357L20 3.84144L24.2391 13.8357L24.5916 14.6669L25.4911 14.7445L36.3356 15.6796L28.1079 22.8062L27.424 23.3986L27.629 24.2798L30.0945 34.8806L20.7751 29.2558Z"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+          </svg>
+        </div>
+        <p class="header_content_description">
+          Контактные данные компании «GOODZONE МАГАЗИН БЫТОВОЙ ТЕХНИКИ И
+          ЭЛЕКТРОНИКИ» — телефоны, местонахождение, режим работы, виды
+          деятельности и другая полезная информация. Пожалуйста, сообщите
+          огранизации, что вы нашли их контакты на сайте Справочник Ташкента —
+          Sprav.uz.
+        </p>
+        <div class="header_content_card">
+          <div class="header_content_card_head">
+            <div class="header_content_card_head_left">
+              <img src="/images/camera.png" alt="" />
+              <div class="header_content_card_head_left_content">
+                <p>XIAOMI</p>
+                <div>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.65004 0.292893C9.04056 -0.0976311 9.67373 -0.0976311 10.0642 0.292893L14.7071 4.93575C15.0976 5.32627 15.0976 5.95944 14.7071 6.34996L11.9219 9.1352L11.9209 9.13616L6.05707 15H1C0.447715 15 0 14.5523 0 14V8.94293L5.86396 3.07897L5.86468 3.07825L8.65004 0.292893ZM6.57143 5.19993L2 9.77136V13H5.22864L9.80007 8.42857L6.57143 5.19993ZM11.2143 7.01436L7.98564 3.78571L9.35714 2.41421L12.5858 5.64286L11.2143 7.01436ZM9.5 14C9.5 13.4477 9.94771 13 10.5 13H14C14.5523 13 15 13.4477 15 14C15 14.5523 14.5523 15 14 15H10.5C9.94771 15 9.5 14.5523 9.5 14Z"
+                      fill="#BCBCBE"
+                    />
+                  </svg>
+
+                  <p>с 2022 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="header_content_card_head_right">
+              <div class="header_content_card_head_right_filter">
+                <p>Филиалы</p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.25298617416!2d69.2793667!3d41.28259745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YI!5e0!3m2!1sru!2s!4v1677667019431!5m2!1sru!2s"
+                width="200"
+                height="140"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="header_content_card_address">
+            <svg
+              width="15"
+              height="17"
+              viewBox="0 0 15 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.5 2C4.47257 2 2.01809 4.43181 2.01809 7.42854C2.01809 9.75579 3.1922 11.6591 4.56211 13.0159C5.24375 13.691 5.95334 14.2089 6.54173 14.5525C6.83626 14.7246 7.08855 14.846 7.28095 14.9213C7.39581 14.9662 7.46673 14.9857 7.5 14.9941C7.53327 14.9857 7.60419 14.9662 7.71905 14.9213C7.91145 14.846 8.16374 14.7246 8.45827 14.5525C9.04666 14.2089 9.75625 13.691 10.4379 13.0159C11.8078 11.6591 12.9819 9.75579 12.9819 7.42854C12.9819 4.43181 10.5274 2 7.5 2ZM0 7.42854C0 3.326 3.35926 0 7.5 0C11.6407 0 15 3.326 15 7.42854C15 10.4584 13.4695 12.8408 11.8644 14.4305C11.0586 15.2287 10.213 15.8491 9.48294 16.2756C9.11824 16.4886 8.77045 16.6601 8.45997 16.7816C8.179 16.8915 7.83121 17 7.5 17C7.16879 17 6.821 16.8915 6.54003 16.7816C6.22955 16.6601 5.88176 16.4886 5.51706 16.2756C4.78697 15.8491 3.94143 15.2287 3.13557 14.4305C1.53046 12.8408 0 10.4584 0 7.42854ZM4.3273 7.42854C4.3273 5.69278 5.74901 4.2857 7.5 4.2857C9.25099 4.2857 10.6727 5.69278 10.6727 7.42854C10.6727 9.16429 9.25101 10.5714 7.5 10.5714C5.74899 10.5714 4.3273 9.16429 4.3273 7.42854ZM7.5 6.2857C6.86232 6.2857 6.34539 6.79859 6.34539 7.42854C6.34539 8.05852 6.86234 8.57142 7.5 8.57142C8.13766 8.57142 8.65461 8.05852 8.65461 7.42854C8.65461 6.79859 8.13768 6.2857 7.5 6.2857Z"
+                fill="#BCBCBE"
+              />
+            </svg>
+
+            <p>Ташкент, Шайхантахурский р-н, пр-т Амира Темура, 129Б</p>
+          </div>
+          <div class="header_content_card_address">
+            <svg
+              class="header_content_card_address_pin"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.72146 0.292893C8.11199 -0.0976311 8.74515 -0.0976311 9.13568 0.292893L14.7071 5.86432C15.0976 6.25485 15.0976 6.88801 14.7071 7.27854C14.3166 7.66906 13.6834 7.66906 13.2929 7.27854L13.2532 7.23883L9.69819 12.9268L10.0642 13.2929C10.4548 13.6834 10.4548 14.3166 10.0642 14.7071C9.67373 15.0976 9.04056 15.0976 8.65004 14.7071L5.17857 11.2356L1.70711 14.7071C1.31658 15.0976 0.683417 15.0976 0.292893 14.7071C-0.0976311 14.3166 -0.0976311 13.6834 0.292893 13.2929L3.76436 9.82143L0.292893 6.34996C-0.0976311 5.95944 -0.0976311 5.32627 0.292893 4.93575C0.683417 4.54523 1.31658 4.54523 1.70711 4.93575L2.07317 5.30181L7.76117 1.74681L7.72146 1.70711C7.33094 1.31658 7.33094 0.683417 7.72146 0.292893ZM9.21255 3.19819L3.52455 6.75319L8.24681 11.4755L11.8018 5.78745L9.21255 3.19819Z"
+                fill="#BCBCBE"
+              />
+            </svg>
+            <p>
+              I MAXI супермаркет, ЮНУСАБАДСКИЙ РАЙОННЫЙ СУД ПО УГОЛОВНЫМ ДЕЛАМ
+            </p>
+          </div>
+          <div class="header_content_card_table">
+            <div class="header_content_card_table_box">
+              <div>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.57143 0H5.3151C6.59338 0 7.70762 0.86997 8.01764 2.11008L8.4781 3.95191C8.81792 5.31117 8.09529 6.70168 6.80922 7.21446C7.04897 7.62184 7.39027 7.96126 7.79916 8.19875C8.45587 6.80867 10.148 6.19506 11.5619 6.90201L13.4601 7.85112C14.4039 8.323 15 9.28759 15 10.3427V11.4286C15 13.401 13.401 15 11.4286 15H9.85714C4.41319 15 0 10.5868 0 5.14286V3.57143C0 1.59898 1.59898 0 3.57143 0ZM3.57143 2H5.3151C5.67564 2 5.98991 2.24538 6.07736 2.59515L6.53782 4.43699C6.63739 4.83529 6.41352 5.24311 6.02403 5.37294L5.15296 5.6633C4.69832 5.81485 4.42767 6.28122 4.52166 6.75115C4.89783 8.63199 6.36801 10.1022 8.24885 10.4783C8.71878 10.5723 9.18515 10.3017 9.3367 9.84704L9.57066 9.14516C9.72186 8.69155 10.2398 8.47703 10.6674 8.69086L12.5657 9.63998C12.8319 9.77307 13 10.0451 13 10.3427V11.4286C13 12.2964 12.2964 13 11.4286 13H9.85714C5.51776 13 2 9.48224 2 5.14286V3.57143C2 2.70355 2.70355 2 3.57143 2Z"
+                    fill="#BCBCBE"
+                  />
+                </svg>
+                +998 71 207-XX-XX
+              </div>
+              <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="">Показать номер</a>
+              </div>
+            </div>
+            <div class="header_content_card_table_boxTime">
+              <div class="">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5ZM7.5 2C4.46243 2 2 4.46243 2 7.5C2 10.5376 4.46243 13 7.5 13C10.5376 13 13 10.5376 13 7.5C13 4.46243 10.5376 2 7.5 2ZM7.5 2.78571C8.05228 2.78571 8.5 3.23343 8.5 3.78571V7.08579L10.0642 8.65004C10.4548 9.04056 10.4548 9.67373 10.0642 10.0642C9.67373 10.4548 9.04056 10.4548 8.65004 10.0642L6.79289 8.20711C6.60536 8.01957 6.5 7.76522 6.5 7.5V3.78571C6.5 3.23343 6.94772 2.78571 7.5 2.78571Z"
+                    fill="#BCBCBE"
+                  />
+                </svg>
+                Сегодня <b>с 10 до 21</b>
+              </div>
+              <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Перерыв <b>без перерыва</b>
+              </div>
+            </div>
+            <div class="header_content_card_table_box">
+              <div>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.09069 6.5H3.96459C4.12091 5.09108 4.54896 3.73108 5.21925 2.49371C3.61162 3.22729 2.41903 4.71245 2.09069 6.5ZM7.5 2.59871C6.69222 3.75978 6.17071 5.09705 5.97965 6.5H9.02035C8.82929 5.09705 8.30777 3.75978 7.5 2.59871ZM9.02035 8.5C8.82929 9.90295 8.30777 11.2402 7.5 12.4013C6.69222 11.2402 6.17071 9.90295 5.97965 8.5H9.02035ZM3.96459 8.5H2.09069C2.41903 10.2875 3.61162 11.7727 5.21925 12.5063C4.54896 11.2689 4.12091 9.90892 3.96459 8.5ZM9.78075 12.5063C10.451 11.2689 10.8791 9.90892 11.0354 8.5H12.9093C12.581 10.2875 11.3884 11.7727 9.78075 12.5063ZM12.9093 6.5H11.0354C10.8791 5.09108 10.451 3.73108 9.78075 2.49371C11.3884 3.22729 12.581 4.71245 12.9093 6.5ZM0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5Z"
+                    fill="#BCBCBE"
+                  />
+                </svg>
+
+                <a href="">a-store.uz</a>
+              </div>
+              <div>
+                <svg
+                  width="15"
+                  height="13"
+                  viewBox="0 0 15 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.000176266 1.91667C0.000176266 0.845995 0.875832 0 1.92875 0H13.0716C14.1245 0 15.0002 0.845994 15.0002 1.91667V3.73031C15.0004 3.74284 15.0004 3.75535 15.0002 3.76785V11.0833C15.0002 12.154 14.1245 13 13.0716 13H1.92875C0.875832 13 0.000176266 12.154 0.000176266 11.0833V3.76784C-5.84572e-05 3.75535 -5.90532e-05 3.74284 0.000176266 3.73032V1.91667ZM2.00018 5.46224V11H13.0002V5.46224L7.9915 8.28765C7.68654 8.45967 7.31382 8.45967 7.00886 8.28765L2.00018 5.46224ZM13.0002 3.16597V2H2.00018V3.16597L7.50018 6.26853L13.0002 3.16597Z"
+                    fill="#BCBCBE"
+                  />
+                </svg>
+                <a href=""> Показать e-mail </a>
+              </div>
+            </div>
+          </div>
+          <div class="header_content_card_map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.25298617416!2d69.2793667!3d41.28259745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YI!5e0!3m2!1sru!2s!4v1677667019431!5m2!1sru!2s"
+              width="100%"
+              height="140"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div
+              class="header_content_card_head_right_filter justify-content-start mt-3 mb-3"
+            >
+              <p>Филиалы</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <p class="header_content_card_description">
+            Различное профессиональное музыкальное оборудование. Бесплатная
+            доставка музыкальных инструментов и платная – аксессуаров, таких как
+            струны, подставки и т.д. в пределах города Ташкента.
+          </p>
+        </div>
+        <div class="header_content_tabs ">
+          <div class="header_content_tabs_tab">Информация</div>
+          <div class="header_content_tabs_tab tabActiv">Фотогалерея</div>
+          <div class="header_content_tabs_tab">График работы</div>
+          <div class="header_content_tabs_tab">Виды деятельности</div>
+        </div>
+      </div>
+
+      <div class="header_ads">
+        <p>w</p>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
